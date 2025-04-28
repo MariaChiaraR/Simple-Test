@@ -32,6 +32,7 @@ public class DriverManager {
     }
 
     private static WebDriver setDriver (String driverType){
+        if (driverType == null ) { driverType="Fire Fox";}
         if (driverType.equalsIgnoreCase("Fire Fox")) {
             String projectPath = System.getProperty("user.dir");
 
