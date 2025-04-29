@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
+import static util.Utility.URL_SITE;
+
 public class DriverManager {
 
     private static WebDriver driver;
@@ -25,14 +27,15 @@ public class DriverManager {
     //private Actions actions;
 
     public DriverManager(){
-        driver = setDriver(Utility.DRIVER);
+        new Utility();
+        setDriver(Utility.DRIVER);
+        driver.get(URL_SITE);
         setDefaultWait();
         windowMaxSize();
         //this.actions = setActions();
     }
 
-    private static WebDriver setDriver (String driverType){
-        if (driverType == null ) { driverType="Fire Fox";}
+    private static void setDriver (String driverType){
         if (driverType.equalsIgnoreCase("Fire Fox")) {
             String projectPath = System.getProperty("user.dir");
 
@@ -40,8 +43,6 @@ public class DriverManager {
 
             driver = new FirefoxDriver();
         }
-
-        return null;
     }
 
     public static void setDefaultWait(){

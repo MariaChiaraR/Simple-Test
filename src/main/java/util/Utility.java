@@ -23,6 +23,7 @@ public class Utility {
     public static String WAIT_TYPE; ;
     public static Integer WAIT_TIME;
     public static Integer PULL_TIME;
+    public static String URL_SITE;
     public static String DRIVER;
     public static DriverManager DRIVER_MANAGER;
 
@@ -30,6 +31,7 @@ public class Utility {
         setProperties("src/test/resources/login.properties");
 
         WAIT_TYPE = prop.getProperty("base_wait_type");
+        URL_SITE = prop.getProperty("url_site");
 
         try{
             String waitTime = prop.getProperty("base_wait_time");
@@ -41,6 +43,7 @@ public class Utility {
             if (!waitTime.isBlank()){
                 PULL_TIME = Integer.parseInt(pullTime);
             }
+
         } catch (NumberFormatException e){
             e.printStackTrace();
         }
@@ -50,6 +53,7 @@ public class Utility {
 
     public static DriverManager getDriverManager(){
         if (DRIVER_MANAGER == null) {
+
             DRIVER_MANAGER = new DriverManager();
         }
             return DRIVER_MANAGER;
