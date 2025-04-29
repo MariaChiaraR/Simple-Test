@@ -15,21 +15,21 @@ public class LoginSteps {
 
     @Given("user is on home page")
     public void user_is_on_home_page() {
-        homePage = new HomePage("home", "Selected Page From List");
+        //homePage = new HomePage("home", "Selected Page From List");
         //       new Utility();
 //        System.out.println(Utility.DRIVER);
         System.out.println("User on home page");
     }
     @When("user click on page name from list")
     public void user_click_on_page_name_from_list() {
-        homePage.clickElement("Selected Page From List");
+        //homePage.clickElement("Selected Page From List");
 //        basePage.clickElement("Selected Page From List");
         //Assert.fail();
         System.out.println("User click");
     }
     @Then("user is on selected pge")
     public void user_is_on_selected_pge() {
-        homePage = new HomePage("add", "Add Button");
+        //homePage = new HomePage("add", "Add Button");
         Assert.fail();
         //Assert.assertTrue(true);
         System.out.println("User on selected page");
