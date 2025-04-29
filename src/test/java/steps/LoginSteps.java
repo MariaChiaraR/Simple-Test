@@ -12,7 +12,8 @@ public class LoginSteps {
     BasePage basePage;
 
     @Given("user is on home page")
-    public void user_is_on_home_page() {basePage = new BasePage("home", "");
+    public void user_is_on_home_page() {
+  //      basePage = new BasePage("home", "");
 //       new Utility();
 //        System.out.println(Utility.DRIVER);
         System.out.println("User on home page");
