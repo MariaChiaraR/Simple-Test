@@ -73,4 +73,8 @@ public class BasePage {
 
     }
 
+    public byte[] screenshot() {
+        return driver.screenshot();
+    }
+
 }

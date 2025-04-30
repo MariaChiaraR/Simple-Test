@@ -35,6 +35,10 @@ public class DriverManager {
         //this.actions = setActions();
     }
 
+    public byte[] screenshot () {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
+
     private static void setDriver (String driverType){
         if (driverType.equalsIgnoreCase("Fire Fox")) {
             String projectPath = System.getProperty("user.dir");
