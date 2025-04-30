@@ -24,7 +24,7 @@ public class LoginSteps {
     public void user_click_on_page_name_from_list() {
         //homePage.clickElement("Selected Page From List");
 //        basePage.clickElement("Selected Page From List");
-        //Assert.fail();
+        Assert.fail();
         System.out.println("User click");
     }
     @Then("user is on selected pge")
