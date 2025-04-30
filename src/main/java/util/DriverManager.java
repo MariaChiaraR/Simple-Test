@@ -3,6 +3,7 @@ package util;
 import dev.failsafe.Timeout;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,7 +46,9 @@ public class DriverManager {
 
             System.setProperty("webdriver.gecko.driver", projectPath + "/src/test/resources/drivers/geckodriver");
 
-            driver = new FirefoxDriver();
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--headless"); // importante!
+            driver = new FirefoxDriver(options);
         }
     }
 
