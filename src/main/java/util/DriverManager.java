@@ -43,7 +43,7 @@ public class DriverManager {
         if (driverType.equalsIgnoreCase("Fire Fox")) {
             String projectPath = System.getProperty("user.dir");
 
-            System.setProperty("webdriver.gecko.driver", projectPath + "/src/test/resources/drivers/geckodriver");
+            System.setProperty("webdriver.gecko.driver", projectPath + "/src/test/resources/drivers/geckodriver.exe");
 
             driver = new FirefoxDriver();
         }
