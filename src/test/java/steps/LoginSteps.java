@@ -33,16 +33,18 @@ public class LoginSteps {
     public void user_click_on_page_name_from_list() {
         homePage.clickElement("Selected Page From List");
 //        basePage.clickElement("Selected Page From List");
-        if (true) {
-            byte[] screenshot = homePage.screenshot();
-            scenario.attach(screenshot, "image/png", "Errore nella homepage");
-        }
+
         //Assert.fail();
         System.out.println("User click");
     }
     @Then("user is on selected pge")
     public void user_is_on_selected_pge() {
         homePage = new HomePage("add", "Add Button");
+
+        if (true) {
+            byte[] screenshot = homePage.screenshot();
+            scenario.attach(screenshot, "image/png", "Errore nella homepage");
+        }
         Assert.fail();
         //Assert.assertTrue(true);
         System.out.println("User on selected page");
