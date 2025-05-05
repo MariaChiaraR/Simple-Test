@@ -37,6 +37,7 @@ public class LoginSteps {
         //Assert.fail();
         System.out.println("User click");
     }
+
     @Then("user is on selected pge")
     public void user_is_on_selected_pge() {
         homePage = new HomePage("add", "Add Button");
@@ -45,6 +46,24 @@ public class LoginSteps {
             byte[] screenshot = homePage.screenshot();
             scenario.attach(screenshot, "image/png", "Errore nella homepage");
         }
+        //Assert.fail();
+        //Assert.assertTrue(true);
+        System.out.println("User on selected page");
+    }
+
+    @When("user click on {string} name from list")
+    public void user_click_on_page_3_name_from_list(String page) {
+        homePage.clickElement(page);
+//        basePage.clickElement("Selected Page From List");
+
+        //Assert.fail();
+        System.out.println("User click");
+    }
+
+    @Then("user is on selected {string} with {string}")
+    public void user_is_on_selected_page_2(String page, String item) {
+        homePage = new HomePage(page, item);
+
         //Assert.fail();
         //Assert.assertTrue(true);
         System.out.println("User on selected page");
