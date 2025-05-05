@@ -29,6 +29,7 @@ public class LoginSteps {
 //        System.out.println(Utility.DRIVER);
         System.out.println("User on home page");
     }
+
     @When("user click on page name from list")
     public void user_click_on_page_name_from_list() {
         homePage.clickElement("Selected Page From List");
@@ -63,6 +64,24 @@ public class LoginSteps {
     @Then("user is on selected {string} with {string}")
     public void user_is_on_selected_page_2(String page, String item) {
         homePage = new HomePage(page, item);
+
+        //Assert.fail();
+        //Assert.assertTrue(true);
+        System.out.println("User on selected page");
+    }
+
+    @When("user click on page 2 name from list")
+    public void user_click_on_page__name_from_list() {
+        homePage.clickElement("page 2");
+//        basePage.clickElement("Selected Page From List");
+
+        //Assert.fail();
+        System.out.println("User click");
+    }
+
+    @Then("user is on selected page 2 with item 2")
+    public void user_is_on_selected_page_with() {
+        homePage = new HomePage("page 2", "item 2");
 
         //Assert.fail();
         //Assert.assertTrue(true);
