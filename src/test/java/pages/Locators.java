@@ -48,9 +48,9 @@ public class Locators {
     public static Map<String, By> HOME_PROVA_PAGE = Map.ofEntries(
             entry("Selected Page From List",
                     By.xpath("//div[@id='content']//*[text()='Add/Remove Elements']")),
-            entry("page 2 ",
+            entry("page 2",
                     By.xpath("//div[@id='content']//*[text()='File Upload']")),
-            entry("page 3 ",
+            entry("page 3",
                     By.xpath("//div[@id='content']//*[text()='Forgot Password']"))
     );
 

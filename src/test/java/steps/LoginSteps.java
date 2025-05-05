@@ -31,7 +31,7 @@ public class LoginSteps {
     }
     @When("user click on page name from list")
     public void user_click_on_page_name_from_list() {
-        homePage.clickElement("Selected Pag From List");
+        homePage.clickElement("Selected Page From List");
 //        basePage.clickElement("Selected Page From List");
 
         //Assert.fail();
