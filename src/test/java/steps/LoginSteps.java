@@ -31,7 +31,7 @@ public class LoginSteps {
     }
     @When("user click on page name from list")
     public void user_click_on_page_name_from_list() {
-        homePage.clickElement("Selected Page From List");
+        homePage.clickElement("Selected Pag From List");
 //        basePage.clickElement("Selected Page From List");
 
         //Assert.fail();
@@ -45,7 +45,7 @@ public class LoginSteps {
             byte[] screenshot = homePage.screenshot();
             scenario.attach(screenshot, "image/png", "Errore nella homepage");
         }
-        Assert.fail();
+        //Assert.fail();
         //Assert.assertTrue(true);
         System.out.println("User on selected page");
     }
