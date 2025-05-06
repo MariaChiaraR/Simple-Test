@@ -21,6 +21,7 @@ Feature: F1
       | page | item |
       | add | Add Button |
       | add | Add Button |
+      | add | Add Button |
 
   @TestCaseKey=PROG-T4
   Scenario Outline:
