@@ -23,7 +23,7 @@ Feature: F1
       | add | Add Button |
 
   @TestCaseKey=PROG-T4
-  Scenario Outline: Test 3
+  Scenario Outline:
     Given user is on home page
     When user click on page name from list
     Then user is on selected "<page>" with "<item>"
