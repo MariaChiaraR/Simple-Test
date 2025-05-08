@@ -1,13 +1,12 @@
 Feature: F1
 
-  @Prova
+  @ProvaTag
   @TestCaseKey=PROG-T2
   Scenario: Test 2
     Given user is on home page
     When user click on "Selected Page From List" name from list
     Then user is on selected "add" with "Add Button"
 
-  @ProvTag
   @TestCaseKey=PROG-T5
   Scenario: Test 5
     Given user is on home page
