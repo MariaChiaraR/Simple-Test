@@ -28,7 +28,7 @@ public class Utility {
     public static DriverManager DRIVER_MANAGER;
 
     public Utility() {
-        setProperties("src/test/resources/login.properties");
+        setProperties("src/test/resources/project.properties");
 
         WAIT_TYPE = prop.getProperty("base_wait_type");
         URL_SITE = prop.getProperty("url_site");
